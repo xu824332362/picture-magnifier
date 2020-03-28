@@ -116,7 +116,7 @@ export const pictureMagnifier = {
       }, false);
 
       this.cursor.addEventListener('mouseenter', (ev) => {
-        if(this.showMagnifier){
+        if (this.showMagnifier) {
           this.cursor.style.display = 'block';
           if (this.magnifier) {
             this.magnifier.style.display = 'block';
@@ -204,13 +204,13 @@ export const pictureMagnifier = {
   calculateBoundary: function (type, margin, insideImgVal, cursorVal, offset, move) {
     if (parseFloat(this.cursor.style[type]) <= Math.floor(margin) && move <= 0.1) {
       /*移动到图片的x,y轴原点*/
-      this.cursor.style[type] = Math.floor(margin) + 'px';
-    } else if (parseFloat(this.cursor.style[type]) >= (insideImgVal + margin - cursorVal) && move >= 0.1) {
-      /*移动到图片的x,y最大值*/
-      this.cursor.style[type] = (insideImgVal + margin - cursorVal) + 'px';
-    } else {
-      this.cursor.style[type] = offset + move + 'px';
+      return
     }
+    if (parseFloat(this.cursor.style[type]) >= (insideImgVal + margin - cursorVal) && move >= 0.1) {
+      /*移动到图片的x,y最大值*/
+      return
+    }
+    this.cursor.style[type] = offset + move + 'px';
   },
   /*生成右侧大图容器*/
   createMagnifier: function () {
