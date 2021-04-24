@@ -1,4 +1,4 @@
-import XCKPicMag from './v-core/index';
+import XCKPicMag from './src/v-core';
 
 XCKPicMag.install = function (Vue){
     Vue.component(XCKPicMag.name, XCKPicMag)

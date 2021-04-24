@@ -2,7 +2,7 @@
 淘宝/京东查看大图,适用vue
 
 ## 效果图
-![效果图](https://github.com/xu824332362/picture-magnifier/blob/master/Snipaste_2020-03-18_13-50-03.png)
+![Snipaste_2021-04-24_10-52-56.png](https://i.loli.net/2021/04/24/SBHdfAbPKxUqIZR.png)
 
 ## 使用说明
 [直接下载](https://github.com/xu824332362/picture-magnifier/blob/master/picture-magnifier.js)到本地项目目录
@@ -59,7 +59,7 @@ import {pictureMagnifier} from '~/plugins/picture-magnifier'
       </li>
     </ul>
   </div>
-  ```
+```
 
 ## 注意事项
 在单页面应用调用时，注意在destroyed事件内销毁已有`#XKC__picture-magnifier`
