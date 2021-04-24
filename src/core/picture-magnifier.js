@@ -51,6 +51,9 @@ export const pictureMagnifier = {
     * 执行时，绑定对象target需要有position: relative或者position: absolute属性存在，没有需要手动加上
     * */
     this.target = ev.target;
+    if(this.target.style.position !== 'relative' && this.target.style.position !== 'absolute属性存在'){
+      this.target.style.position = 'relative';
+    }
     const {clientWidth, clientHeight} = ev.target;
     this.parentWidth = clientWidth;
     this.parentHeight = clientHeight;
@@ -241,6 +244,7 @@ export const pictureMagnifier = {
       "left": (absoluteLeft) + 'px',
       "z-index": 9999,
       "overflow": "hidden",
+      "backgroundColor": "#ffffff"
     };
     for (let i in style) {
       this.magnifier.style[i] = style[i];
