@@ -1,5 +1,7 @@
 # picture-magnifier
-淘宝/京东查看大图,适用vue
+实现图片放大镜效果，适用vue；
+
+A picture magnifier component for Vue；
 
 ## Result
 ![Snipaste_2021-04-24_10-52-56.png](https://i.loli.net/2021/04/24/SBHdfAbPKxUqIZR.png)
