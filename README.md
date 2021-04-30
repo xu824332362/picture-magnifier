@@ -58,7 +58,7 @@ width: {
 }
 
 /**
-* 图片容器高度/Wrapper width 
+* 图片容器高度/Wrapper height 
 * @type {String}
 */
 height: {
