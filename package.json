@@ -4,13 +4,12 @@
   "description": "A picture magnifier component for Vue",
   "main": "index.js",
   "keywords": [
-    "eleme",
+    "zoom",
+    "magnifier",
     "vue",
     "components"
   ],
-  "devDependencies": {
-    "vue": "^2.6.12"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
