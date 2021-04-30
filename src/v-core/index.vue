@@ -20,6 +20,14 @@ export default {
   name: "XCKPicMag",
   props:{
     imgSrc: String,
+    originImgSrc: {
+      type: String,
+      default: ''
+    },
+    offsetLeft: {
+      type: Number,
+      default: 20
+    },
     width: {
       type: String,
       default: '100%'
@@ -39,7 +47,7 @@ export default {
       if(!this.loaded){
         return
       }
-      pictureMagnifier.handleTouch(e);
+      pictureMagnifier.handleTouch(e, this.offsetLeft, this.originImgSrc,);
     }
   },
   created() {

@@ -111,14 +111,14 @@ export const pictureMagnifier = {
 
       }, false);
 
-      this.target.addEventListener('mouseout', (ev) => {
+      this.target.addEventListener('mouseout', () => {
         this.cursor.style.display = 'none';
         if (this.magnifier) {
           this.magnifier.style.display = 'none';
         }
       }, false);
 
-      this.cursor.addEventListener('mouseenter', (ev) => {
+      this.cursor.addEventListener('mouseenter', () => {
         if (this.showMagnifier) {
           this.cursor.style.display = 'block';
           if (this.magnifier) {
@@ -244,7 +244,9 @@ export const pictureMagnifier = {
       "left": (absoluteLeft) + 'px',
       "z-index": 9999,
       "overflow": "hidden",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "box-sizing": "border-box",
+      "border:": "1px solid rgb(238, 238, 238)"
     };
     for (let i in style) {
       this.magnifier.style[i] = style[i];
